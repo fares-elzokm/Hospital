@@ -32,13 +32,21 @@
 
 ### 🖥️ Desktop System Interfaces
 
-| Login & Access                                    | Main Dashboard                                        | Doctor Administration                              |
-| ------------------------------------------------- | ----------------------------------------------------- | -------------------------------------------------- |
-| <img src="img/screenshots/login.png" width="280"> | <img src="img/screenshots/Dashboard.png" width="280"> | <img src="img/screenshots/Doctor.png" width="280"> |
+| Login & Access                                    | Main Dashboard                                        |
+| ------------------------------------------------- | ----------------------------------------------------- |
+| <img src="img/screenshots/login.png" width="380"> | <img src="img/screenshots/Dashboard.png" width="380"> |
 
-| Appointments & Dialogs                                   | Patient Records                                      | Department Controls                                    | System Reports                                      |
-| -------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------- |
-| <img src="img/screenshots/Appointments.png" width="200"> | <img src="img/screenshots/Patients.png" width="200"> | <img src="img/screenshots/Department.png" width="200"> | <img src="img/screenshots/Reports.png" width="200"> |
+| Doctor Administration                              | Appointments & Dialogs                                   |
+| -------------------------------------------------- | -------------------------------------------------------- |
+| <img src="img/screenshots/Doctor.png" width="380"> | <img src="img/screenshots/Appointments.png" width="380"> |
+
+| Patient Records                                      | Department Controls                                    |
+| ---------------------------------------------------- | ------------------------------------------------------ |
+| <img src="img/screenshots/Patients.png" width="380"> | <img src="img/screenshots/Department.png" width="380"> |
+
+|                   System Reports                    |
+| :-------------------------------------------------: |
+| <img src="img/screenshots/Reborts.png" width="450"> |
 
 ---
 
@@ -62,6 +70,6 @@ Make sure you have **Qt Creator** and a suitable **C++ toolchain** (MinGW / MSVC
 
 ## 📫 Contact Developer
 
-- 🌐 **GitHub**: [github.com/fares-elzokm](https://github.com/fares-elzokm)
-- 💼 **LinkedIn**: [linkedin.com/in/fares-elzokm](https://linkedin.com/in/fares-elzokm)
+- 🌐 **GitHub**: [://github.com](https://://github.com)
+- 💼 **LinkedIn**: [://linkedin.com](https://://linkedin.com)
 - 📧 **Email**: esamfares92@gmail.com
