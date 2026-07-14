@@ -1,49 +1,53 @@
-# Hi there, I'm Wentuma 👋
+# 🏥 Hospital Management System (Qt GUI)
 
-I'm a passionate Software Developer with a strong focus on creating high-performance, secure applications. With expertise in C++, Qt, and application security, I enjoy tackling complex challenges and building robust software solutions.
+![C++](https://shields.io)
+![Qt](https://shields.io)
+![Desktop](https://shields.io)
 
-My goal is to share knowledge and help other developers by creating in-depth technical content.
-
----
-
-### 🚀 My Featured Project: Qt GUI Hospital Management
-
-Check out the demonstration of my hospital management system UI built with C++ and the Qt framework.
-
-[![Hospital Management System UI Preview](https://i.ytimg.com/vi/qkF8-8vZ6CM/hqdefault.jpg)](https://www.youtube.com/watch?v=qkF8-8vZ6CM)
-
-**[Click here to watch the full video on YouTube](https://www.youtube.com/watch?v=qkF8-8vZ6CM)**
+> A robust, feature-rich Desktop Application designed to streamline medical institution workflows, monitor department operations, manage staff records, and automate patient scheduling.
 
 ---
 
-### 📺 My YouTube Channel: [Wentuma](https://www.youtube.com/@Wentuma)
+## ✨ Key Features
 
-On my YouTube channel, I dive deep into the world of software development and cybersecurity. I create tutorials and detailed explanations on topics that are crucial for modern developers.
-
-**You will find content about:**
-* **C++ Programming:** From basics to advanced concepts.
-* **Qt Framework:** Building modern graphical user interfaces.
-* **Application Security:** Techniques for software hardening, anti-cracking, and protecting your code.
-* **Tech Explanations:** Simplifying complex technical subjects.
-
-If you are interested in leveling up your skills in software development and security, my channel is for you.
-
-<a href="https://www.youtube.com/@Wentuma?sub_confirmation=1">
-  <img src="https://img.shields.io/badge/YouTube-Subscribe-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Subscribe to my YouTube Channel"/>
-</a>
+- 🔐 **Secure Authentication**: Customized Login framework protecting internal clinical workflows.
+- 👨‍⚕️ **Staff Administration**: Create, update, and fetch dynamic details for hospital specialists.
+- 📋 **Patient Profiling**: Detailed record-keeping system for medical tracking and clinical status.
+- 📅 **Appointment Scheduling**: Dynamic dialog-based booking management matching doctors with slots.
+- 🏢 **Departmental Management**: Comprehensive tools to structure internal hospital zones and medical wings.
+- 🗄️ **Persistent Data**: Seamless structural DB layer keeping patient/doctor matrices fully synced.
 
 ---
 
-### 🛠️ My Tech Stack & Skills
+## 🛠️ Architecture & Tech Stack
 
-- **Languages:** C++, PHP, SQL
-- **Frameworks:** Qt
-- **Databases:** MySQL
-- **Expertise:** Application Security, Software Hardening, Anti-Reverse Engineering
+- **Language**: C++ (OOP Principles, Clean Architecture)
+- **GUI Framework**: Qt Widgets (`QDialog`, `QMainWindow`, custom `.ui` interfaces)
+- **Build System**: QMake (`Hospital.pro`)
+- **Environment**: Qt Creator / Windows Environment
 
 ---
 
-### 📫 Get In Touch
+## 🚀 Getting Started
 
-- **YouTube:** [youtube.com/@Wentuma](https://www.youtube.com/@Wentuma)
-- **GitHub:** [github.com/wwentuma-ship-it](https://github.com/wwentuma-ship-it)
+### Prerequisites
+
+Make sure you have **Qt Creator** and a suitable **C++ toolchain** (MinGW / MSVC) installed.
+
+### Build and Run
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com
+   ```
+2. Open `Hospital.pro` in **Qt Creator**.
+3. Select your compiler kit (e.g., Desktop Qt MinGW).
+4. Press **Run (Ctrl + R)** to compile and launch.
+
+---
+
+## 📫 Contact Developer
+
+- 🌐 **GitHub**: [github.com/fares-elzokm](https://github.com/fares-elzokm)
+- 💼 **LinkedIn**: [linkedin.com/in/fares-elzokm](https://linkedin.com/in/fares-elzokm)
+- 📧 **Email**: esamfares92@gmail.com
