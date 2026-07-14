@@ -36,9 +36,9 @@
 | ------------------------------------------------- | ----------------------------------------------------- | -------------------------------------------------- |
 | <img src="img/screenshots/login.png" width="280"> | <img src="img/screenshots/Dashboard.png" width="280"> | <img src="img/screenshots/Doctor.png" width="280"> |
 
-| Appointments & Dialogs                                   | Patient Records                                      | Department Controls                                    |
-| -------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------ |
-| <img src="img/screenshots/Appointments.png" width="280"> | <img src="img/screenshots/Patients.png" width="280"> | <img src="img/screenshots/Department.png" width="280"> |
+| Appointments & Dialogs                                   | Patient Records                                      | Department Controls                                    | System Reports                                      |
+| -------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------- |
+| <img src="img/screenshots/Appointments.png" width="200"> | <img src="img/screenshots/Patients.png" width="200"> | <img src="img/screenshots/Department.png" width="200"> | <img src="img/screenshots/Reports.png" width="200"> |
 
 ---
 
