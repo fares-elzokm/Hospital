@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Patient</class>
+ <widget class="QDialog" name="Patient">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>405</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Patient Information</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* --- Thor Theme QSS --- */
+
+/* Main Window &amp; Central Widget */
+QMainWindow, QWidget#centralwidget, QDialog#Patient {
+    background-color: #0D1117;
+}
+
+/* --- Frame --- */
+QWidget#frame
+{
+    background-color: transparent;
+}
+/* --- Sidebar --- */
+QWidget#sidebar {
+    background-color: #161B22;
+    border-radius: 10px;
+}
+QWidget#sidebar QPushButton {
+    background-color: transparent;
+    border: none;
+    color: #E6EDF3;
+    padding: 10px;
+    padding-left: 15px;
+    border-radius: 5px;
+    text-align: left;
+}
+QWidget#sidebar QPushButton:hover {
+    background-color: #21262D;
+}
+QWidget#sidebar QPushButton:pressed,
+QWidget#sidebar QPushButton:checked {
+    background-color: #00F6FF;
+    color: #0D1117;
+}
+
+/* --- Topbar --- */
+QFrame#topbar {
+    background-color: #161B22;
+    border-radius: 8px;
+}
+QFrame#topbar QPushButton {
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    text-align: center;
+}
+QFrame#topbar QPushButton:hover {
+    background-color: #21262D;
+}
+QFrame#topbar QPushButton#closeButton:hover {
+    background-color: #E81123;
+}
+
+/*--- bottomBarFrame --*/
+QFrame#bottomBarFrame {
+    background-color: #161B22;
+    border-radius: 8px;
+}
+/* --- Main Content Area --- */
+QFrame#content, QStackedWidget &gt; QWidget {
+    background-color: #0D1117;
+    border: none;
+}
+
+/* General Page Titles */
+QLabel#pageTitle {
+    color: #E6EDF3;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+/* --- Form Specific --- */
+QFrame#formFrame {
+    background-color: #161B22;
+    border-radius: 8px;
+}
+
+#formFrame QLabel {
+ color: #E6EDF3;
+ font-size: 11pt;
+ padding-bottom: 5px;
+}
+
+/* --- Table View --- */
+QTableView {
+    background-color: #161B22;
+    border: 1px solid #21262D;
+    border-radius: 8px;
+    gridline-color: #21262D;
+    color: #E6EDF3;
+}
+QTableView::item {
+    padding: 5px;
+    border-bottom: 1px solid #21262D;
+}
+QTableView::item:selected {
+    background-color: #00F6FF;
+    color: #0D1117;
+}
+QHeaderView::section {
+    background-color: #0D1117;
+    color: #E6EDF3;
+    padding: 5px;
+    border: 1px solid #21262D;
+    font-weight: bold;
+}
+
+/* --- Line Edit &amp; ComboBox --- */
+QLineEdit, QComboBox {
+    background-color: #0D1117;
+    border: 1px solid #21262D;
+    border-radius: 5px;
+    padding: 8px 10px;
+    color: #E6EDF3;
+    font-size: 10pt;
+}
+QLineEdit:focus, QComboBox:focus {
+    border-color: #00F6FF;
+}
+QComboBox::drop-down {
+    border: none;
+}
+QComboBox::down-arrow {
+    image: url(:/img/chevron-down.svg); /* Ensure you have this icon */
+    width: 12px;
+    height: 12px;
+}
+QComboBox QAbstractItemView {
+    background-color: #161B22;
+    border: 1px solid #21262D;
+    color: #E6EDF3;
+    selection-background-color: #00F6FF;
+    selection-color: #0D1117;
+}
+
+/* --- Main Action Button --- */
+QPushButton#saveButton {
+    background-color: #00F6FF;
+    color: #0D1117;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-weight: bold;
+    font-size: 11pt;
+}
+QPushButton#saveButton:hover {
+    background-color: #33fdff;
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>12</number>
+   </property>
+   <property name="leftMargin">
+    <number>12</number>
+   </property>
+   <property name="topMargin">
+    <number>12</number>
+   </property>
+   <property name="rightMargin">
+    <number>12</number>
+   </property>
+   <property name="bottomMargin">
+    <number>12</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="topbar">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="leftMargin">
+       <number>10</number>
+      </property>
+      <property name="rightMargin">
+       <number>10</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="pageTitle">
+        <property name="text">
+         <string>Patient Information</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="closeButton">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/img/x.svg</normaloff>:/img/x.svg</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="formFrame">
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <property name="labelAlignment">
+       <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+      </property>
+      <property name="horizontalSpacing">
+       <number>10</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>15</number>
+      </property>
+      <property name="leftMargin">
+       <number>15</number>
+      </property>
+      <property name="topMargin">
+       <number>15</number>
+      </property>
+      <property name="rightMargin">
+       <number>15</number>
+      </property>
+      <property name="bottomMargin">
+       <number>15</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Name:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="nameLineEdit"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Age:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="ageLineEdit"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Gender:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QComboBox" name="genderComboBox">
+        <item>
+         <property name="text">
+          <string>Male</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Female</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Phone:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="phoneLineEdit"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Medical History:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="medicalHistoryLineEdit"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="bottomBarFrame">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="saveButton">
+        <property name="text">
+         <string>Save</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>closeButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Patient</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>418</x>
+     <y>35</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>224</x>
+     <y>189</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

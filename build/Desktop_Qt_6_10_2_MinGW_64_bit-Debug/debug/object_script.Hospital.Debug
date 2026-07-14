@@ -1,0 +1,15 @@
+debug/appointmentdialog.o
+debug/db.o
+debug/department.o
+debug/doctor.o
+debug/login.o
+debug/main.o
+debug/mainwindow.o
+debug/patient.o
+debug/qrc_resources.o
+debug/moc_appointmentdialog.o
+debug/moc_department.o
+debug/moc_doctor.o
+debug/moc_login.o
+debug/moc_mainwindow.o
+debug/moc_patient.o

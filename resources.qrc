@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/maximize.svg</file>
+        <file>img/minus.svg</file>
+        <file>img/x.svg</file>
+        <file>img/Appointments.png</file>
+        <file>img/Dashboard.png</file>
+        <file>img/Patients.png</file>
+        <file>img/Settings.png</file>
+        <file>img/health.png</file>
+        <file>img/cursor.png</file>
+        <file>img/Dashboard1.png</file>
+        <file>img/Department.png</file>
+        <file>img/Docter.png</file>
+        <file>img/Report.png</file>
+        <file>img/LogoFinal.png</file>
+        <file>img/coin.png</file>
+        <file>img/download1.png</file>
+        <file>img/patient.png</file>
+        <file>img/pie-chart.png</file>
+        <file>img/work-time.png</file>
+        <file>img/logout.jfif</file>
+    </qresource>
+</RCC>

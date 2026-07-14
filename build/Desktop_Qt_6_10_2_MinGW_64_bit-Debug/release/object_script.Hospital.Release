@@ -1,0 +1,15 @@
+release/appointmentdialog.o
+release/db.o
+release/department.o
+release/doctor.o
+release/login.o
+release/main.o
+release/mainwindow.o
+release/patient.o
+release/qrc_resources.o
+release/moc_appointmentdialog.o
+release/moc_department.o
+release/moc_doctor.o
+release/moc_login.o
+release/moc_mainwindow.o
+release/moc_patient.o

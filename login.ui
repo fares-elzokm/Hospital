@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Login</class>
+ <widget class="QWidget" name="Login">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>501</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>0</y>
+     <width>450</width>
+     <height>800</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-top-left-radius: 40px; 
+    
+    /* تحديد الركن السفلي يمين */
+    border-bottom-left-radius: 40px;
+    /* باقي الأركان (الشمال) هتفضل 0 عشان تبقى حادة */
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Shape::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Shadow::Raised</enum>
+   </property>
+   <widget class="QFrame" name="frame_3">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>-1</y>
+      <width>441</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>999999</width>
+      <height>999999</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #161B22;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>-10</x>
+       <y>60</y>
+       <width>471</width>
+       <height>371</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>:/img/LogoFinal.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>439</x>
+     <y>-1</y>
+     <width>361</width>
+     <height>501</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>999999</width>
+     <height>999999</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #0D1117;
+border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Shape::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Shadow::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>90</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #E6EDF3;
+    font-family: &quot;Inter&quot;, &quot;Segoe UI&quot;, sans-serif;
+    font-size: 14px; /* الحجم التقريبي في الصورة */
+    font-weight: 400;
+</string>
+    </property>
+    <property name="text">
+     <string> login to your account to continuo</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txt_email">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>170</y>
+      <width>301</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #161B22;
+border: 1px solid #21262D;
+    border-radius: 12px;
+    padding: 12px;
+    color: #E6EDF3;
+    font-family: &quot;Segoe UI&quot;, sans-serif;
+    font-size: 14px;
+border: 2px solid #21262D;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Email</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_login">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>330</y>
+      <width>301</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+    background-color: #047481;
+    border: 1px solid #21262D;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+QPushButton:hover{
+    background-color: #1E6CC5;
+}</string>
+    </property>
+    <property name="text">
+     <string>Login</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txt_password">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>250</y>
+      <width>301</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #161B22;
+border: 1px solid #21262D;
+    border-radius: 12px;
+    padding: 12px;
+    color: #E6EDF3;
+    font-family: &quot;Segoe UI&quot;, sans-serif;
+    font-size: 14px;
+border: 2px solid #21262D;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::EchoMode::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>Password</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: &quot;Segoe UI&quot;, sans-serif;
+color: rgb(255, 249, 248);
+font-size: 30px</string>
+    </property>
+    <property name="text">
+     <string>Welcome Back</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>361</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame#frame_4 {
+background-color: #161B22;
+
+   border-top-right-radius: 40px; /* الزاوية اللي أنت عايزها */
+    border-top-left-radius: 0px;   /* باقي الزوايا خلليها 0 لو مش عايزها مدورة */
+   border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="btn_close">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>10</y>
+       <width>31</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: transparent;
+image: url(:/img/x.svg);
+    }
+    QPushButton:hover {
+    background-color: #ff0000; 
+    }</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_min">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>0</y>
+       <width>21</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: transparent;
+image: url(:/img/minus.svg);
+
+    }
+    QPushButton:hover {
+background-color: #161B22;
+    }</string>
+     </property>
+     <property name="inputMethodHints">
+      <set>Qt::InputMethodHint::ImhDialableCharactersOnly|Qt::InputMethodHint::ImhDigitsOnly|Qt::InputMethodHint::ImhEmailCharactersOnly|Qt::InputMethodHint::ImhFormattedNumbersOnly|Qt::InputMethodHint::ImhLatinOnly|Qt::InputMethodHint::ImhLowercaseOnly|Qt::InputMethodHint::ImhUppercaseOnly|Qt::InputMethodHint::ImhUrlCharactersOnly</set>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>18</width>
+       <height>18</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>2</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="_2"/>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>2</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2"/>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

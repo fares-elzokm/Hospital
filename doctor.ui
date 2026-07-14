@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Doctor</class>
+ <widget class="QDialog" name="Doctor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>324</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow, QWidget#centralwidget, QDialog#Doctor {
+    background-color: #0D1117;
+}
+
+/* --- Frame --- */
+QWidget#frame
+{
+    background-color: transparent;
+}
+/* --- Sidebar --- */
+QWidget#sidebar {
+    background-color: #161B22;
+    border-radius: 10px;
+}
+QWidget#sidebar QPushButton {
+    background-color: transparent;
+    border: none;
+    color: #E6EDF3;
+    padding: 10px;
+    padding-left: 15px;
+    border-radius: 5px;
+    text-align: left;
+}
+QWidget#sidebar QPushButton:hover {
+    background-color: #21262D;
+}
+QWidget#sidebar QPushButton:pressed,
+QWidget#sidebar QPushButton:checked {
+    background-color: #00F6FF;
+    color: #0D1117;
+}
+
+/* --- Topbar --- */
+QFrame#topbar {
+    background-color: #161B22;
+    border-radius: 8px;
+}
+QFrame#topbar QPushButton {
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    text-align: center;
+}
+QFrame#topbar QPushButton:hover {
+    background-color: #21262D;
+}
+QFrame#topbar QPushButton#closeButton:hover {
+    background-color: #E81123;
+}
+
+/*--- bottomBarFrame --*/
+QFrame#bottomBarFrame {
+    background-color: #161B22;
+    border-radius: 8px;
+}
+/* --- Main Content Area --- */
+QFrame#content, QStackedWidget &gt; QWidget {
+    background-color: #0D1117;
+    border: none;
+}
+
+/* General Page Titles */
+QLabel#pageTitle {
+    color: #E6EDF3;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+/* --- Form Specific --- */
+QFrame#formFrame {
+    background-color: #161B22;
+    border-radius: 8px;
+}
+
+#formFrame QLabel {
+ color: #E6EDF3;
+ font-size: 11pt;
+ padding-bottom: 5px;
+}
+
+/* --- Table View --- */
+QTableView {
+    background-color: #161B22;
+    border: 1px solid #21262D;
+    border-radius: 8px;
+    gridline-color: #21262D;
+    color: #E6EDF3;
+}
+QTableView::item {
+    padding: 5px;
+    border-bottom: 1px solid #21262D;
+}
+QTableView::item:selected {
+    background-color: #00F6FF;
+    color: #0D1117;
+}
+QHeaderView::section {
+    background-color: #0D1117;
+    color: #E6EDF3;
+    padding: 5px;
+    border: 1px solid #21262D;
+    font-weight: bold;
+}
+
+/* --- Line Edit &amp; ComboBox --- */
+QLineEdit, QComboBox {
+    background-color: #0D1117;
+    border: 1px solid #21262D;
+    border-radius: 5px;
+    padding: 8px 10px;
+    color: #E6EDF3;
+    font-size: 10pt;
+}
+QLineEdit:focus, QComboBox:focus {
+    border-color: #00F6FF;
+}
+QComboBox::drop-down {
+    border: none;
+}
+QComboBox::down-arrow {
+    image: url(:/img/chevron-down.svg); /* Ensure you have this icon */
+    width: 12px;
+    height: 12px;
+}
+QComboBox QAbstractItemView {
+    background-color: #161B22;
+    border: 1px solid #21262D;
+    color: #E6EDF3;
+    selection-background-color: #00F6FF;
+    selection-color: #0D1117;
+}
+
+/* --- Main Action Button --- */
+QPushButton#saveButton {
+    background-color: #00F6FF;
+    color: #0D1117;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-weight: bold;
+    font-size: 11pt;
+}
+QPushButton#saveButton:hover {
+    background-color: #33fdff;
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QFrame" name="topbar">
+     <property name="maximumSize">
+      <size>
+       <width>16777213</width>
+       <height>45</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="pageTitle">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="closeButton">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/img/x.svg</normaloff>:/img/x.svg</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="formFrame">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Name:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Age:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Gender:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0" colspan="2">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Department:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QComboBox" name="comboBoxDepartment"/>
+      </item>
+      <item row="5" column="1">
+       <widget class="QComboBox" name="comboBoxGender">
+        <item>
+         <property name="text">
+          <string>Male</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Female</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="lineEditAge"/>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEditName"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item alignment="Qt::AlignmentFlag::AlignBottom">
+    <widget class="QFrame" name="bottomBarFrame">
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="saveButton">
+        <property name="text">
+         <string>Save</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
