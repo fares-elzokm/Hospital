@@ -70,6 +70,6 @@ Make sure you have **Qt Creator** and a suitable **C++ toolchain** (MinGW / MSVC
 
 ## 📫 Contact Developer
 
-- 🌐 **GitHub**: [://github.com](https://://github.com)
-- 💼 **LinkedIn**: [://linkedin.com](https://://linkedin.com)
+- 🌐 **GitHub**: https://github.com/fares-elzokm
+- 💼 **LinkedIn**: https://linkedin.com/in/fares-elzokm
 - 📧 **Email**: esamfares92@gmail.com
