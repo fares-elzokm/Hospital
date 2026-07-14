@@ -28,6 +28,20 @@
 
 ---
 
+## 📸 Application Screenshots
+
+### 🖥️ Desktop System Interfaces
+
+| Login & Access                                    | Main Dashboard                                        | Doctor Administration                              |
+| ------------------------------------------------- | ----------------------------------------------------- | -------------------------------------------------- |
+| <img src="img/screenshots/login.png" width="280"> | <img src="img/screenshots/Dashboard.png" width="280"> | <img src="img/screenshots/Doctor.png" width="280"> |
+
+| Appointments & Dialogs                                   | Patient Records                                      | Department Controls                                    |
+| -------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------ |
+| <img src="img/screenshots/Appointments.png" width="280"> | <img src="img/screenshots/Patients.png" width="280"> | <img src="img/screenshots/Department.png" width="280"> |
+
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
